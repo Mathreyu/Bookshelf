@@ -7,8 +7,14 @@ package com.example.rraya.bookshelf.models;
 public class Book {
     VolumeInfo volumeInfo;
     public Book(VolumeInfo volumeInfo) {
-
+        this.volumeInfo = volumeInfo;
     }
 
+    public VolumeInfo getVolumeInfo() {
+        return volumeInfo;
+    }
 
+    public void setVolumeInfo(VolumeInfo volumeInfo) {
+        this.volumeInfo = volumeInfo;
+    }
 }

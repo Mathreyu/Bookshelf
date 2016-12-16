@@ -1,5 +1,7 @@
 package com.example.rraya.bookshelf.models;
 
+import java.util.List;
+
 /**
  * Created by rraya on 12/16/16.
  */
@@ -7,17 +9,17 @@ package com.example.rraya.bookshelf.models;
 public class VolumeInfo {
 
     public String title;
-    public String cover;
+    public ImageLinks imageLinks;
     public String publishedDate;
-    public String author;
-    public String Description;
+    public List<String> authors;
+    public String description;
 
-    public VolumeInfo(String title, String cover, String publishedDate, String author, String description) {
+    public VolumeInfo(String title, ImageLinks imageLinks, String publishedDate, List<String> authors, String description) {
         this.title = title;
-        this.cover = cover;
+        this.imageLinks = imageLinks;
         this.publishedDate = publishedDate;
-        this.author = author;
-        Description = description;
+        this.authors = authors;
+        this.description = description;
     }
 
     public String getTitle() {
@@ -28,12 +30,12 @@ public class VolumeInfo {
         this.title = title;
     }
 
-    public String getCover() {
-        return cover;
+    public ImageLinks getSelfLink() {
+        return imageLinks;
     }
 
-    public void setCover(String cover) {
-        this.cover = cover;
+    public void setSelfLink(ImageLinks imageLinks) {
+        this.imageLinks = imageLinks;
     }
 
     public String getPublishedDate() {
@@ -44,19 +46,19 @@ public class VolumeInfo {
         this.publishedDate = publishedDate;
     }
 
-    public String getAuthor() {
-        return author;
+    public List<String> getAuthors() {
+        return authors;
     }
 
-    public void setAuthor(String author) {
-        this.author = author;
+    public void setAuthors(List<String> authors) {
+        this.authors = authors;
     }
 
     public String getDescription() {
-        return Description;
+        return description;
     }
 
     public void setDescription(String description) {
-        Description = description;
+        description = description;
     }
 }
