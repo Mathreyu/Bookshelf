@@ -44,7 +44,7 @@ public class BookAdapter extends BaseAdapter{
     public View getView(int i, View view, ViewGroup viewGroup) {
         View item = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.book_item,viewGroup, false);
         TextView textView = (TextView) item.findViewById(R.id.book_title);
-        textView.setText(bookList.get(i).getTitle());
+        textView.setText(bookList.get(i).getVolumeInfo().getTitle());
         return item;
     }
 }
