@@ -39,7 +39,7 @@ public class BookView extends Activity{
         authorsText = getIntent().getExtras().getString("authors");
         dateText = getIntent().getExtras().getString("publishedDate");
 
-        Picasso.with(this).load(coverText).into(cover);
+        Picasso.get().load(coverText).into(cover);
         date.setText(dateText);
         authors.setText(authorsText);
         description.setText(descriptionText);
